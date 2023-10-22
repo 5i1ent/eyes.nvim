@@ -155,12 +155,12 @@ M.setup = function()
 	hi("Comment", { fg = palette.hex04, italic = true })
 	hi("Conceal", { fg = palette.hex13 })
 
-	hi("Constant", { fg = palette.hex08 })
+	hi("Constant", { fg = palette.hex08, italic = true })
 
 	hi("Identifier", { fg = palette.hex10 })
 	hi("Function", { fg = palette.hex09 })
 
-	hi("Statement", { fg = palette.hex07 })
+	hi("Statement", { fg = palette.hex03, bold = true})
 
 	hi("PreProc", { fg = palette.hex07 })
 
@@ -175,13 +175,13 @@ M.setup = function()
 	hi("Todo", { fg = palette.hex07 })
 
 	hi("@constant.builtin", { link = "Constant" })
-	hi("@variable.builtin", { fg = palette.hex07, italic = true })
+	hi("@variable.builtin", { fg = palette.hex07 })
 	hi("@constructor", { link = "Function" })
 
 	hi("@tag.attribute", { link = "@attribute" })
 	hi("@tag.delimiter", { link = "Delimiter" })
 
-	hi("@type.builtin", { fg = palette.hex08, italic = true })
+	hi("@type.builtin", { fg = palette.hex08 })
 	hi("@type.qualifier", { link = "@keyword" })
 
 	hi("@text.title", { bold = true })
